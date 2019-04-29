@@ -3,6 +3,17 @@
 .cls-4 {
   fill: none;
 }
+#svg_timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#movie_1 {
+  position: absolute;
+  opacity: 0.5;
+
+  background-color: red;
+}
 
 .cls-1,
 .cls-2,
