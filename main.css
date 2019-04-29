@@ -1,0 +1,36 @@
+.cls-1,
+.cls-3,
+.cls-4 {
+  fill: none;
+}
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.cls-1,
+.cls-2 {
+  stroke-width: 10px;
+}
+
+.cls-2 {
+  fill: #fff7e9;
+}
+
+.cls-3,
+.cls-5 {
+  stroke-width: 6px;
+}
+
+.cls-4 {
+  stroke-width: 5px;
+}
+
+.cls-5 {
+  fill: #fff;
+}

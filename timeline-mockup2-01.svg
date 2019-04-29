@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      
+    </style>
+  </defs>
+  <title>timeline-mockup2</title>
+  <g id="timeline">
+    <line class="cls-1" x1="57.52" y1="594.78" x2="935.5" y2="594.78"/>
+    <line class="cls-1" x1="946.42" y1="594.52" x2="966.68" y2="594.52"/>
+    <line class="cls-1" x1="992" y1="594.52" x2="1012.26" y2="594.52"/>
+    <line class="cls-1" x1="1042.03" y1="594.52" x2="1062.28" y2="594.52"/>
+    <g id="bullets">
+      <circle class="cls-2" cx="124.61" cy="593.52" r="26.58"/>
+      <circle class="cls-2" cx="328.87" cy="593.52" r="26.58"/>
+      <circle class="cls-2" cx="535.73" cy="593.52" r="26.58"/>
+    </g>
+  </g>
+  <g id="movies">
+    <g id="prisoner">
+      <rect class="HTML_placeholder cls-3" data-name="HTML placeholder" x="535.27" y="176.81" width="368.64" height="146.09"/>
+      <line class="cls-4" x1="534.47" y1="571.27" x2="534.47" y2="322.9"/>
+    </g>
+    <g id="chamber">
+      <rect class="HTML_placeholder cls-5" data-name="HTML placeholder"  x="329.27" y="357.82" width="368.64" height="146.09"/>
+      <line class="cls-4" x1="329.47" y1="567.3" x2="329.47" y2="503.91"/>
+    </g>
+    <g id="philosopher">
+      <rect class="HTML_placeholder cls-3" data-name="HTML placeholder"  x="127.67" y="176.81" width="368.64" height="146.09"/>
+      <line class="cls-4" x1="127.87" y1="566.87" x2="127.87" y2="322.9"/>
+    </g>
+  </g>
+</svg>
