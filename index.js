@@ -9,6 +9,8 @@ function init() {
         .querySelector("#svg_timeline")
         .insertAdjacentHTML("afterbegin", svgData);
       fitRect("#philosopher .HTML_placeholder", "#movie_1");
+      fitRect("#chamber .HTML_placeholder", "#movie_2");
+      fitRect("#prisoner .HTML_placeholder", "#movie_3");
     });
 }
 
