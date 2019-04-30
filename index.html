@@ -9,11 +9,22 @@
   </head>
   <body>
     <h1>Harry Potter Movies</h1>
+
     <div id="svg_timeline">
       <div class="svgplaceholder" data-svgplaceholder="philosopher"></div>
       <div class="svgplaceholder" data-svgplaceholder="chamber"></div>
       <div class="svgplaceholder" data-svgplaceholder="prisoner"></div>
     </div>
+    <template id="movieTemplate">
+      <h1 data-field="title">Title</h1>
+      <div class="mediaContainer">
+        <img src="" alt="MoviePoster" data-field="img" />
+        <div class="textContainer">
+          <p data-field="year">YEAR</p>
+          <p data-field="director">DIRECTOR</p>
+        </div>
+      </div>
+    </template>
   </body>
   <script src="index.js"></script>
 </html>
