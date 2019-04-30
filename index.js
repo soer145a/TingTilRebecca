@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", init);
+window.addEventListener("resize", resizeSVG);
 function init() {
   console.log("INIT");
   fetch("timeline-mockup2.svg")
@@ -8,18 +9,29 @@ function init() {
       document
         .querySelector("#svg_timeline")
         .insertAdjacentHTML("afterbegin", svgData);
-      fitRect("#philosopher .HTML_placeholder", "#movie_1");
-      fitRect("#chamber .HTML_placeholder", "#movie_2");
-      fitRect("#prisoner .HTML_placeholder", "#movie_3");
+
+      resizeSVG();
     });
+}
+
+function resizeSVG() {
+  const svgplaceholders = document.querySelectorAll(".svgplaceholder");
+  svgplaceholders.forEach(replaceSVGWithHTML);
 }
 
 function fitRect(svgElement, htmlElement) {
   svgElement = document.querySelector(svgElement);
-  htmlElement = document.querySelector(htmlElement);
+  const rect = svgElement.getBoundingClientRect();
+  console.log(rect);
 
-  htmlElement.style.left = svgElement.getAttribute("x") + "px";
-  htmlElement.style.top = svgElement.getAttribute("y") + "px";
-  htmlElement.style.width = svgElement.getAttribute("width") + "px";
-  htmlElement.style.height = svgElement.getAttribute("height") + "px";
+  htmlElement.style.left = rect.x + "px";
+  htmlElement.style.top = rect.y + "px";
+  htmlElement.style.width = rect.width + "px";
+  htmlElement.style.height = rect.height + "px";
+}
+
+function replaceSVGWithHTML(htmlElement) {
+  const svgID = htmlElement.dataset.svgplaceholder;
+  const svgSelector = "#" + svgID + " .HTML_placeholder";
+  fitRect(svgSelector, htmlElement);
 }
